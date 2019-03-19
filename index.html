@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="style1.css">
+<script src="main.js"></script>
+
+
+</head>
+<body>
+    <h5> Sign up w/ Strong Password</h5>
+    <header id="masthead">
+      
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="cyberindex.html">Home</a>
+                </li>
+        <li class="nav-item">
+                <a class="nav-link" href="index1.html">Two ways authentication</a>
+            </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href=" ">Help</a>
+          </li>
+        </ul>
+      
+</header>
+
+
+
+<div class="container">
+   
+  
+  <form action="/action_page.php">
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, one special character and at least 8 or more characters" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+
+<!--
+    Add the buttom
+
+<h2>Security Questions</h2>
+<p>Click on the button to open the dropdown menu.</p> 
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Security Questions</button>
+  <div id="myDropdown" class="dropdown-content">
+    <p>Enter your pet name</p>
+    <p>Enter you mother maiden name</p>
+    <p>Enter your Kindergarden teacher Name</p>
+  </div>
+</div>
+-->
+
+<footer>
+    <div> 
+            Copyright &copy; Security is key by Stella Ekwalla
+    </div>
+</footer>
+
+
+
+</body>
+</html>
